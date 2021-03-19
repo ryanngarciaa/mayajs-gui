@@ -1,6 +1,6 @@
 <template>
   <CreateProjLayout />
-  <div><h1>Hi</h1></div>
+  <div></div>
 </template>
 
 <script>

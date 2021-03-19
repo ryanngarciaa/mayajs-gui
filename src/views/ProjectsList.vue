@@ -1,10 +1,10 @@
 <template>
-  <div>Project List Page</div>
+  <div class="p-3"><h3>List Project Page</h3></div>
 </template>
 
 <script>
 export default {
-  name: "ProjectList",
+  name: "ProjectsList",
 };
 </script>
 

@@ -13,6 +13,7 @@
 .bar {
   background-color: #dc3545;
   color: white;
+  max-width: 100%;
 }
 .nav-link {
   color: white;

@@ -1,6 +1,7 @@
 <template>
-  <CreateProjLayout />
-  <div></div>
+  <div>
+    <CreateProjLayout />
+  </div>
 </template>
 
 <script>

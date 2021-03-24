@@ -58,7 +58,7 @@
           type="checkbox"
           id="flexSwitchCheckDefault"
         />
-        <label class="form-check-label" for="flexSwitchCheckDefault"
+        <label class="form-check-label p-1" for="flexSwitchCheckDefault"
           >Initialize git repository (recommended)</label
         >
       </div>
@@ -72,9 +72,11 @@
     </div>
     <div class="w-100 d-none d-md-block p-1"></div>
     <div class="col-6 col-sm-4 p-3">
-      <span class="p-1"
-        ><button type="button" class="btn btn-danger btn-md">
-          <i class="bi bi-x" />Cancel
+      <span class="p-1">
+        <button type="button" class="btn btn-danger">
+          <router-link class="newbtn" to="/create"
+            ><i class="bi bi-x" />Cancel</router-link
+          >
         </button></span
       >
       <span class="p-1"

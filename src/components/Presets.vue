@@ -63,8 +63,10 @@
         </button></span
       >
       <span class="p-1"
-        ><button type="button" class="btn btn-danger btn-md" disabled>
-          Create Project<i class="bi bi-arrow-right-short" /></button
+        ><button type="button" class="btn btn-danger btn-md">
+          <router-link class="newbtn" to="/dashboard">
+            Create Project<i class="bi bi-arrow-right-short"
+          /></router-link></button
       ></span>
     </div>
   </div>

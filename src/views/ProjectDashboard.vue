@@ -1,20 +1,8 @@
 <template>
   <div>
-    <ProjectLayout />
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Project Dashboard</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand"><h3>Project Dashboard</h3></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
           <form class="d-flex">
@@ -32,9 +20,7 @@
 </template>
 
 <script>
-import ProjectLayout from "../layouts/ProjectLayout";
 export default {
-  components: { ProjectLayout },
   name: "ProjectDashboard",
 };
 </script>
@@ -42,5 +28,9 @@ export default {
 <style>
 .navbar {
   margin-left: 15rem;
+  background-color: #dc3545;
+}
+.navbar-brand {
+  color: white;
 }
 </style>

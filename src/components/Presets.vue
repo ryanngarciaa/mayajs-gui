@@ -53,6 +53,20 @@
         </div>
       </div>
     </div>
+    <div class="w-100 d-none d-md-block p-1"></div>
+    <div class="col-6 col-sm-4 p-3">
+      <span class="p-1">
+        <button type="button" class="btn btn-danger">
+          <router-link class="newbtn" to="/create"
+            ><i class="bi bi-x" />Previous</router-link
+          >
+        </button></span
+      >
+      <span class="p-1"
+        ><button type="button" class="btn btn-danger btn-md" disabled>
+          Create Project<i class="bi bi-arrow-right-short" /></button
+      ></span>
+    </div>
   </div>
 </template>
 

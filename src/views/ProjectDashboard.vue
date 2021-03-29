@@ -1,5 +1,6 @@
 <template>
   <div>
+    <ProjectLayout />
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand"><h3>Project Dashboard</h3></a>
@@ -20,8 +21,10 @@
 </template>
 
 <script>
+import ProjectLayout from "../layouts/ProjectLayout";
 export default {
   name: "ProjectDashboard",
+  components: { ProjectLayout },
 };
 </script>
 

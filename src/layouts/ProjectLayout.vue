@@ -1,21 +1,10 @@
 <template>
-  <div>
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-          >Disabled</a
-        >
-      </li>
-    </ul>
+  <div class="sidenav">
+    <a>Dashboard</a>
+    <a>Plugins</a>
+    <a>Dependecies</a>
+    <a>Configuration</a>
+    <a>Tasks</a>
   </div>
 </template>
 
@@ -26,55 +15,26 @@ export default {
 </script>
 
 <style>
-.nav {
-  margin: 0;
-  padding: 0;
-  width: 15rem;
-  background-color: #f1f1f1;
-  position: fixed;
+.sidenav {
   height: 100%;
-  overflow: auto;
-  flex: column;
+  width: 15rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  margin-top: 4rem;
 }
-.sidebar a {
-  display: block;
-  color: black;
-  padding: 16px;
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
   text-decoration: none;
-}
-.sidebar a.active {
-  background-color: #4caf50;
-  color: white;
-}
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
+  font-size: 20px;
+  display: block;
 }
 
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {
-    float: left;
-  }
-  div.content {
-    margin-left: 0;
-  }
-}
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
+.sidenav a:hover {
+  background-color: #dc3545;
+  color: blue;
 }
 </style>

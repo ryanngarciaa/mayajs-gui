@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="row">
     <nav id="sidebarMenu" class="col d-md-block sidebar collapse">
       <div class="position-sticky">
@@ -36,6 +37,14 @@
         </ul>
       </div>
     </nav>
+=======
+  <div class="sidenav">
+    <a>Dashboard</a>
+    <a>Plugins</a>
+    <a>Dependecies</a>
+    <a>Configuration</a>
+    <a>Tasks</a>
+>>>>>>> 6929506e704112642e6710534ca81ea269bfc8e9
   </div>
 </template>
 
@@ -46,10 +55,34 @@ export default {
 </script>
 
 <style>
+<<<<<<< HEAD
 .nav-link {
   color: black;
 }
 .nav {
   height: 100%;
+=======
+.sidenav {
+  height: 100%;
+  width: 15rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  margin-top: 4rem;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+.sidenav a:hover {
+  background-color: #dc3545;
+  color: blue;
+>>>>>>> 6929506e704112642e6710534ca81ea269bfc8e9
 }
 </style>

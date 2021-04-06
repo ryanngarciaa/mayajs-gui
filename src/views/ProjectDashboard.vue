@@ -49,7 +49,6 @@ import ProjectLayout from "../layouts/ProjectLayout";
 export default {
   components: { ProjectLayout },
   name: "ProjectDashboard",
-  components: { ProjectLayout },
 };
 </script>
 

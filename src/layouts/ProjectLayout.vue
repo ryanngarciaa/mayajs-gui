@@ -4,16 +4,20 @@
       <div class="position-sticky">
         <ul class="nav flex-column">
           <li class="nav-item d-flex">
-            <a class="nav-link active" aria-current="page" href="#">
+            <router-link
+              class="nav-link active"
+              aria-current="page"
+              to="dashboard"
+            >
               <i class="bi bi-columns"></i>
               Dashboard
-            </a>
+            </router-link>
           </li>
           <li class="nav-item d-flex">
-            <a class="nav-link" href="#">
+            <router-link class="nav-link" to="plugins">
               <i class="bi bi-puzzle"></i>
               Plugins
-            </a>
+            </router-link>
           </li>
           <li class="nav-item d-flex">
             <a class="nav-link" href="#">
@@ -36,6 +40,7 @@
         </ul>
       </div>
     </nav>
+    <router-view />
   </div>
 </template>
 

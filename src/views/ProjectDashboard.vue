@@ -9,7 +9,9 @@
             <button class="btn btn-danger m-1" type="submit">
               Install devtools
             </button>
-            <button class="btn btn-danger m-1" type="submit">Customize</button>
+            <button class="btn btn-danger m-1" type="submit">
+              <i class="bi bi-pencil"> Customize</i>
+            </button>
           </form>
         </div>
       </div>
@@ -36,7 +38,9 @@
             Return to the project manager with the dropdown at the top left of
             the screen or the home button in the status bar at the bottom.
           </p>
-          <a href="#" class="btn btn-danger mt-4">Understood</a>
+          <button href="#" class="btn btn-danger mt-4">
+            <i class="bi bi-check-circle"> Understood</i>
+          </button>
         </div>
       </div>
     </div>

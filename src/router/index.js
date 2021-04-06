@@ -32,6 +32,11 @@ const routes = [
     name: "ProjectDashboard",
     component: () => import("../views/ProjectDashboard.vue"),
   },
+  {
+    path: "/plugins",
+    name: "ProjectPlugins",
+    component: () => import("../views/ProjectPlugins.vue"),
+  },
 ];
 
 const router = createRouter({

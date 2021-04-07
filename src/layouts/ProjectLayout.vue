@@ -1,42 +1,41 @@
 <template>
-  <div class="row">
-    <nav id="sidebarMenu" class="col d-md-block sidebar collapse">
-      <div class="position-sticky">
-        <ul class="nav flex-column">
-          <li class="nav-item d-flex">
-            <a class="nav-link active" aria-current="page" href="#">
-              <i class="bi bi-columns"></i>
-              Dashboard
-            </a>
-          </li>
-          <li class="nav-item d-flex">
-            <a class="nav-link" href="#">
-              <i class="bi bi-puzzle"></i>
-              Plugins
-            </a>
-          </li>
-          <li class="nav-item d-flex">
-            <a class="nav-link" href="#">
-              <i class="bi bi-bookmarks"></i>
-              Dependencies
-            </a>
-          </li>
-          <li class="nav-item d-flex">
-            <a class="nav-link" href="#">
-              <i class="bi bi-gear"></i>
-              Configuration
-            </a>
-          </li>
-          <li class="nav-item d-flex">
-            <a class="nav-link" href="#">
-              <i class="bi bi-list-task"></i>
-              Tasks
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+  <nav id="sidebarMenu" class="col d-md-block sidebar collapse mt-3">
+    <div class="position-sticky">
+      <ul class="nav flex-column">
+        <li class="nav-item d-flex">
+          <router-link class="nav-link active" to="dashboard">
+            <i class="bi bi-columns"></i>
+            Dashboard
+          </router-link>
+        </li>
+        <li class="nav-item d-flex">
+          <router-link class="nav-link" to="plugins">
+            <i class="bi bi-puzzle"></i>
+            Plugins
+          </router-link>
+        </li>
+        <li class="nav-item d-flex">
+          <router-link class="nav-link" to="dependencies">
+            <i class="bi bi-bookmarks"></i>
+            Dependencies
+          </router-link>
+        </li>
+        <li class="nav-item d-flex">
+          <a class="nav-link">
+            <i class="bi bi-gear"></i>
+            Configuration
+          </a>
+        </li>
+        <li class="nav-item d-flex">
+          <a class="nav-link">
+            <i class="bi bi-list-task"></i>
+            Tasks
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <router-view />
 </template>
 
 <script>

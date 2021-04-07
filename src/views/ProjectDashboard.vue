@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand"><h4>Project Dashboard</h4></a>
@@ -20,21 +20,24 @@
       </div>
       <div class="col-4 card mt-3" style="width: 33rem">
         <div class="card-body">
-          <h4 class="card-title mt-4">Welcome to your new project!</h4>
-          <p class="card-text mt-5">
-            You are looking at the project dashboard where you can put widgets.
-            Use the 'Customize' button to add more! Everything is automatically
-            saved.
+          <h4 class="card-title m-5">Welcome to your new project!</h4>
+          <p class="card-text m-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </p>
-          <p class="card-text mt-5">
-            On the left are the different available pages. 'Plugins' let you add
-            new Vue CLI plugins, 'Dependencies' for managing the packages,
-            'Configuration' to configure the tools and 'Tasks' to run scripts
-            (for example webpack).
+          <p class="card-text m-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </p>
-          <p class="card-text mt-5">
-            Return to the project manager with the dropdown at the top left of
-            the screen or the home button in the status bar at the bottom.
+          <p class="card-text m-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </p>
           <a href="#" class="btn btn-danger mt-4">Understood</a>
         </div>
@@ -53,10 +56,12 @@ export default {
 
 <style>
 .navbar {
-  margin-left: 14.5rem;
   background-color: #dc3545;
 }
 .navbar-brand {
   color: white;
+}
+.row {
+  margin-right: 0 !important;
 }
 </style>

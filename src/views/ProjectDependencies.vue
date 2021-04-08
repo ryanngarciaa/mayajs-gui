@@ -2,20 +2,16 @@
   <div>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand"><h4>Project Plugins</h4></a>
+        <a class="navbar-brand"><h4>Project Dependencies</h4></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
           <form class="d-flex">
-            <button class="btn btn-danger m-1" type="submit">
-              Add vue-router
-            </button>
-            <button class="btn btn-danger m-1" type="submit">Add vuex</button>
-            <button class="btn btn-danger m-1" type="submit">
+            <button class="btn btn-danger" type="submit">
               Install devtools
             </button>
-            <button class="btn btn-danger m-1" type="submit">
+            <button class="btn btn-danger" type="submit">
               <i class="bi bi-plus"></i>
-              Add plugin
+              Install dependency
             </button>
           </form>
         </div>
@@ -27,7 +23,7 @@
       </div>
       <div class="col-4 card mt-3" style="width: 33rem">
         <div class="card-body">
-          <h6 class="card-title text-muted d-flex">Installed plugins</h6>
+          <h6 class="card-title text-muted d-flex">Main dependencies</h6>
         </div>
       </div>
     </div>
@@ -37,8 +33,8 @@
 <script>
 import ProjectLayout from "../layouts/ProjectLayout";
 export default {
+  name: "ProjectDependencies",
   components: { ProjectLayout },
-  name: "ProjectPlugins",
 };
 </script>
 

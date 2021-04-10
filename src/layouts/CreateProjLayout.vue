@@ -24,7 +24,7 @@
         <button
           type="button"
           v-on:click="component = 'features'"
-          class="btn btn-danger"
+          class="btn btn-danger disabled"
         >
           Features
         </button>
@@ -33,7 +33,7 @@
         <button
           type="button"
           v-on:click="component = 'configurations'"
-          class="btn btn-danger"
+          class="btn btn-danger disabled"
         >
           Configuration
         </button>

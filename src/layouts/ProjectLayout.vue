@@ -2,35 +2,14 @@
   <nav id="sidebarMenu" class="col d-md-block sidebar collapse mt-3">
     <div class="position-sticky">
       <ul class="nav flex-column">
-        <li class="nav-item d-flex">
-          <router-link class="nav-link active" to="dashboard">
-            <i class="bi bi-columns"></i>
-            Dashboard
+        <li v-for="link in links" :key="link.id" class="nav-item d-flex">
+          <router-link
+            class="nav-link active"
+            :to="link.path"
+            :class="link.icon"
+          >
+            {{ link.name }}
           </router-link>
-        </li>
-        <li class="nav-item d-flex">
-          <router-link class="nav-link" to="plugins">
-            <i class="bi bi-puzzle"></i>
-            Plugins
-          </router-link>
-        </li>
-        <li class="nav-item d-flex">
-          <router-link class="nav-link" to="dependencies">
-            <i class="bi bi-bookmarks"></i>
-            Dependencies
-          </router-link>
-        </li>
-        <li class="nav-item d-flex">
-          <a class="nav-link">
-            <i class="bi bi-gear"></i>
-            Configuration
-          </a>
-        </li>
-        <li class="nav-item d-flex">
-          <a class="nav-link">
-            <i class="bi bi-list-task"></i>
-            Tasks
-          </a>
         </li>
       </ul>
     </div>
@@ -41,6 +20,17 @@
 <script>
 export default {
   name: "ProjectLayout",
+  data: () => {
+    return {
+      links: [
+        { name: " Dashboard", icon: "bi-columns", path: "dashboard" },
+        { name: " Plugins", icon: "bi-puzzle", path: "plugins" },
+        { name: " Dependencies", icon: "bi-bookmarks", path: "dependencies" },
+        { name: " Configuration", icon: "bi-gear", path: "" },
+        { name: " Tasks", icon: "bi-list-task", path: "" },
+      ],
+    };
+  },
 };
 </script>
 

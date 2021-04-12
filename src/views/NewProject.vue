@@ -12,4 +12,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.row {
+  margin-right: 0 !important;
+}
+</style>

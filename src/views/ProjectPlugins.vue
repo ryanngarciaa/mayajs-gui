@@ -2,18 +2,22 @@
   <div>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand"><h4>Project Plugins</h4></a>
+        <a class="navbar-brand"
+          ><h4>{{ title }}</h4></a
+        >
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
           <form class="d-flex">
-            <button class="btn btn-danger m-1" type="submit">
+            <button class="btn btn-danger rounded-pill m-1" type="submit">
               Add vue-router
             </button>
-            <button class="btn btn-danger m-1" type="submit">Add vuex</button>
-            <button class="btn btn-danger m-1" type="submit">
+            <button class="btn btn-danger rounded-pill m-1" type="submit">
+              Add vuex
+            </button>
+            <button class="btn btn-danger rounded-pill m-1" type="submit">
               Install devtools
             </button>
-            <button class="btn btn-danger m-1" type="submit">
+            <button class="btn btn-danger rounded-pill m-1" type="submit">
               <i class="bi bi-plus"></i>
               Add plugin
             </button>
@@ -39,6 +43,11 @@ import ProjectLayout from "../layouts/ProjectLayout";
 export default {
   components: { ProjectLayout },
   name: "ProjectPlugins",
+  data: () => {
+    return {
+      title: "Project Plugins",
+    };
+  },
 };
 </script>
 

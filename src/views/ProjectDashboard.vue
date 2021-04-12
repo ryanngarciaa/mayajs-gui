@@ -42,7 +42,7 @@
             aliquip ex ea commodo consequat.
           </p>
           <button href="#" class="btn btn-danger mt-4">
-            <i class="bi bi-check-circle"> Understood</i>
+            <i class="bi bi-check-circle"></i> Understood
           </button>
         </div>
       </div>

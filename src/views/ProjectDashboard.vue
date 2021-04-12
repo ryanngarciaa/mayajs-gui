@@ -34,8 +34,6 @@
           <p class="card-text m-4">
             {{ cardText }}
           </p>
-
-          <button href="#" class="btn btn-danger mt-4">
           <button href="#" class="btn btn-danger rounded-pill mt-4">
             <i class="bi bi-check-circle"></i> Understood
           </button>

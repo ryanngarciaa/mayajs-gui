@@ -19,7 +19,7 @@
             </button>
             <button class="btn btn-danger rounded-pill m-1" type="submit">
               <i class="bi bi-plus"></i>
-              Add plugin
+              Add Module
             </button>
           </form>
         </div>
@@ -31,7 +31,7 @@
       </div>
       <div class="col-4 card mt-3" style="width: 33rem">
         <div class="card-body">
-          <h6 class="card-title text-muted d-flex">Installed plugins</h6>
+          <h5 class="card-title text-muted d-flex">Installed Modules</h5>
         </div>
       </div>
     </div>
@@ -42,10 +42,10 @@
 import ProjectLayout from "../layouts/ProjectLayout";
 export default {
   components: { ProjectLayout },
-  name: "ProjectPlugins",
+  name: "ProjectModules",
   data: () => {
     return {
-      title: "Project Plugins",
+      title: "Project Modules",
     };
   },
 };

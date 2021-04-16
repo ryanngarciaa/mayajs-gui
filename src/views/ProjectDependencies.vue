@@ -23,9 +23,32 @@
       <div class="col-2">
         <ProjectLayout />
       </div>
-      <div class="col-4 card mt-3" style="width: 33rem">
+      <div class="col-4 card mt-3" style="width: auto">
         <div class="card-body">
-          <h6 class="card-title text-muted d-flex">Main dependencies</h6>
+          <h5 class="card-title text-muted d-flex">Main dependencies</h5>
+          <ul class="container">
+            <li
+              v-for="dependency in dependencies"
+              :key="dependency.id"
+              class="row"
+            >
+              <div class="col-md border border-1 mt-3">
+                <div class="row">
+                  <div class="col-md d-flex">{{ dependency.name }}</div>
+                  <div class="w-100"></div>
+                  <div class="col-md d-flex">{{ dependency.version }}</div>
+                  <div class="col-md d-flex">{{ dependency.update }}</div>
+                  <div class="col-md d-flex">
+                    <i class="bi bi-check-circle-fill text-muted"></i
+                    >{{ dependency.installed }}
+                  </div>
+                  <div class="col-md d-flex">
+                    <i class="bi bi-box-arrow-up-right text-muted"></i>More Info
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -40,6 +63,23 @@ export default {
   data: () => {
     return {
       title: "Project Dependencies",
+      dependencies: [
+        {
+          name: " core-js",
+          version: "version 3.9.1",
+          update: "latest 3.10.1",
+          installed: " Installed",
+          link: "",
+          icon: "bi-check-circle-fill",
+        },
+        {
+          name: " maya-js",
+          version: "version 2.6.12",
+          update: "latest 2.6.12",
+          installed: " Installed",
+          link: "",
+        },
+      ],
     };
   },
 };

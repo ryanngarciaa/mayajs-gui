@@ -20,7 +20,7 @@
               id="flexSwitchCheckDefault"
             />
           </div>
-          <div class="col-8 col-md-5 p-3">
+          <div class="col-8 col-md-6 p-3">
             <div class="col">Default Preset</div>
             <div class="col">MayaJS</div>
           </div>
@@ -33,7 +33,7 @@
               id="flexSwitchCheckDefault"
             />
           </div>
-          <div class="col-8 col-md-5 p-3">
+          <div class="col-8 col-md-6 p-3">
             <div class="col">Preset 2</div>
             <div class="col">MayaJS</div>
           </div>
@@ -46,7 +46,7 @@
               id="flexSwitchCheckDefault"
             />
           </div>
-          <div class="col-8 col-md-5 p-3">
+          <div class="col-8 col-md-6 p-3">
             <div class="col">Manual Preset</div>
             <div class="col">MayaJS</div>
           </div>

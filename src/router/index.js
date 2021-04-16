@@ -33,19 +33,14 @@ const routes = [
     component: () => import("../views/ProjectDashboard.vue"),
   },
   {
-    path: "/plugins",
-    name: "ProjectPlugins",
-    component: () => import("../views/ProjectPlugins.vue"),
+    path: "/modules",
+    name: "ProjectModules",
+    component: () => import("../views/ProjectModules.vue"),
   },
   {
     path: "/dependencies",
     name: "ProjectDependencies",
     component: () => import("../views/ProjectDependencies.vue"),
-  },
-  {
-    path: "/plugins",
-    name: "ProjectPlugins",
-    component: () => import("../views/ProjectPlugins.vue"),
   },
 ];
 

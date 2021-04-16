@@ -5,7 +5,7 @@
         <li v-for="link in links" :key="link.id" class="nav-item d-flex">
           <router-link
             class="nav-link active"
-            :to="link.path"
+            :to="link.route"
             :class="link.icon"
           >
             {{ link.name }}
@@ -23,11 +23,11 @@ export default {
   data: () => {
     return {
       links: [
-        { name: " Dashboard", icon: "bi-columns", path: "dashboard" },
-        { name: " Plugins", icon: "bi-puzzle", path: "plugins" },
-        { name: " Dependencies", icon: "bi-bookmarks", path: "dependencies" },
-        { name: " Configuration", icon: "bi-gear", path: "" },
-        { name: " Tasks", icon: "bi-list-task", path: "" },
+        { name: " Dashboard", icon: "bi-columns", route: "dashboard" },
+        { name: " Modules", icon: "bi-puzzle", route: "modules" },
+        { name: " Dependencies", icon: "bi-bookmarks", route: "dependencies" },
+        { name: " Configuration", icon: "bi-gear", route: "" },
+        { name: " Tasks", icon: "bi-list-task", route: "" },
       ],
     };
   },

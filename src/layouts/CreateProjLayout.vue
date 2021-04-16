@@ -2,40 +2,14 @@
   <div class="bar justify-content-center p-3">
     <h3>Create a new project</h3>
     <ul class="nav justify-content-center">
-      <li class="nav-item">
+      <li v-for="link in links" :key="link.id" class="nav-item">
         <button
           type="button"
-          v-on:click="component = 'details'"
+          v-on:click="component = link.component"
           class="btn btn-danger"
+          :class="link.active"
         >
-          Details
-        </button>
-      </li>
-      <li class="nav-item">
-        <button
-          type="button"
-          v-on:click="component = 'presets'"
-          class="btn btn-danger"
-        >
-          Presets
-        </button>
-      </li>
-      <li class="nav-item">
-        <button
-          type="button"
-          v-on:click="component = 'features'"
-          class="btn btn-danger disabled"
-        >
-          Features
-        </button>
-      </li>
-      <li class="nav-item">
-        <button
-          type="button"
-          v-on:click="component = 'configurations'"
-          class="btn btn-danger disabled"
-        >
-          Configuration
+          {{ link.name }}
         </button>
       </li>
     </ul>
@@ -60,6 +34,16 @@ export default {
   data() {
     return {
       component: "details",
+      links: [
+        { name: "Details", component: "details", active: "" },
+        { name: "Presets", component: "presets", active: "" },
+        { name: "Features", component: "features", active: "disabled" },
+        {
+          name: "Configuration",
+          component: "configuration",
+          active: "disabled",
+        },
+      ],
     };
   },
 };
